@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/cmcnamara15/Logo_Maker/issues"
   },
-  "homepage": "https://github.com/cmcnamara15/Logo_Maker#readme"
+  "homepage": "https://github.com/cmcnamara15/Logo_Maker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.5.0"
+  }
 }
