@@ -1,7 +1,7 @@
-const inquirer = requirer("inquirer");
-const Text = require("./lib/text");
-const Circle = require("./lib/circle");
-const SVG = require("./lib/svg");
+const inquirer = require('inquirer');
+const Text = require('./lib/text');
+const Circle = require('./lib/circle');
+const SVG = require('./lib/svg');
 
 const fs = require("fs")
 
