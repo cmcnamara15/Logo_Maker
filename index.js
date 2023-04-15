@@ -1,6 +1,9 @@
 const inquirer = require('inquirer');
 const Text = require('./lib/text');
 const Circle = require('./lib/circle');
+const Triangle = require('./lib/triangle.js');
+const Square = require('./lib/square.js');
+const Shape = require('./lib/shapes.js')
 const SVG = require('./lib/svg');
 
 const fs = require("fs")
@@ -17,14 +20,20 @@ inquirer.prompt([
         message: "Enter text color",
     },
     {
-        type: "input",
+        type: "list",
         name: "shape",
-        message: "Choose a shape"
+        message: "Which shape would you like?",
+        choices: ["Circle", "Square", "Triangle"]
+    },
+    {
+        type: "input",
+        name: "shapeColor",
+        message: "Enter a shape color",
     }
 ])
 .then(answers => {
     const newText = new Text(answers.text, answers.color);
-    const newShape = new Circle("brown");
+    const newShape = new Shape(answers.shape, answers.color);
 
     const newSVG = new SVG(newText, newShape);
 
