@@ -1,6 +1,9 @@
-const inquirer = ("inquirer");
-const Text = require("./lib/text")
-const Circle = require("./lib/circle")
+const inquirer = requirer("inquirer");
+const Text = require("./lib/text");
+const Circle = require("./lib/circle");
+const SVG = require("./lib/svg");
+
+const fs = require("fs")
 
 inquirer.prompt([
     {
@@ -19,7 +22,13 @@ inquirer.prompt([
         message: "Choose a shape"
     }
 ])
-.then(answer => {
+.then(answers => {
     const newText = new Text(answers.text, answers.color);
-    const newShape = new Circle()
-})
+    const newShape = new Circle("brown");
+
+    const newSVG = new SVG(newText, newShape);
+
+    fs.writeFile("./examples/result.svg", newSVG.create(), () => {
+        console.log("SVG created!")
+    })
+}) 
