@@ -8,7 +8,8 @@ const SVG = require('./lib/svg');
 
 const fs = require("fs")
 
-inquirer.prompt([
+
+const questions = [
     {
         type: "input",
         name: "text",
@@ -23,21 +24,30 @@ inquirer.prompt([
         type: "list",
         name: "shape",
         message: "Which shape would you like?",
-        choices: ["Circle", "Square", "Triangle"]
+        choices: ["Circle", "Square", "Triangle"],
     },
     {
         type: "input",
         name: "shapeColor",
         message: "Enter a shape color",
     }
-])
-.then(answers => {
-    const newText = new Text(answers.text, answers.color);
-    const newShape = new Shape(answers.shape, answers.color);
+]
 
-    const newSVG = new SVG(newText, newShape);
 
-    fs.writeFile("./examples/result.svg", newSVG.create(), () => {
-        console.log("SVG created!")
-    })
-}) 
+function init() {
+    inquirer
+    .prompt(questions)
+    .then(answers => {
+        if(answers.text.length > 3){
+            console.log("Text length must be no greater than three.")
+        }
+        const newText = new Text(answers.text, answers.color);
+        const newShape = new Shape(answers.shape, answers.color);
+
+        const newSVG = new SVG(newText, newShape);
+
+        fs.writeFile("./examples/result.svg", newSVG.create(), () => {
+            console.log("SVG created!")
+        })
+    }) 
+}
