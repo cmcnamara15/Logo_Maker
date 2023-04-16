@@ -39,15 +39,22 @@ function init() {
     .prompt(questions)
     .then(answers => {
         if(answers.text.length > 3){
-            console.log("Text length must be no greater than three.")
+            console.log("Text length must be no greater than three.");
+            init();
+        } else {
+        const newText = new Text(answers.text, answers.textColor);
+        // const newShape = new Shape(answers.shape, answers.color);
+        var newShape;
+        if(answers.shape === "Circle"){
+            newShape = new Circle(answers.shapeColor);
         }
-        const newText = new Text(answers.text, answers.color);
-        const newShape = new Shape(answers.shape, answers.color);
-
         const newSVG = new SVG(newText, newShape);
 
-        fs.writeFile("./examples/result.svg", newSVG.create(), () => {
-            console.log("SVG created!")
+        fs.writeFile("./examples/logo.svg", newSVG.create(), () => {
+            console.log("Generated Logo.SVG!");
         })
+        }
     }) 
 }
+
+init();
