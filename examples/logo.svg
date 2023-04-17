@@ -1,6 +1,6 @@
 
         <svg width="300" height="200">
-            <rect width="200" height="200" fill:"blue" />
-             <text x="85" y="100" style font-size ="large" fill="pink">CTM</text>
+            <circle cx="100" cy="100" r="100" fill="blue"/>
+             <text x="35" y="115" font-size="60px" fill="Pink">CTM</text>
         </svg>
         
