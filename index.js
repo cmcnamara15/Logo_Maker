@@ -47,6 +47,12 @@ function init() {
         var newShape;
         if(answers.shape === "Circle"){
             newShape = new Circle(answers.shapeColor);
+        } else {
+            if(answers.shape === "Triangle"){
+                newShape = new Triangle(answers.shapeColor);
+        } else {
+            newShape = new Square(answers.shapeColor);
+        }
         }
         const newSVG = new SVG(newText, newShape);
 
