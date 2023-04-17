@@ -1,6 +1,6 @@
 
         <svg width="300" height="200">
-            <circle cx="100" cy="100" r="100" fill="blue"/>
+            <polygon points="0,200 100,0 200,200" fill="Gold" <text x ="33" y="175" font-size="60px" fill="undefined"/>
              <text x="35" y="115" font-size="60px" fill="Pink">CTM</text>
         </svg>
         
