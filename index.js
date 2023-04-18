@@ -1,3 +1,5 @@
+// Pulling all the files needed to ultimately write the output file 
+
 const inquirer = require('inquirer');
 const Text = require('./lib/text');
 const Circle = require('./lib/circle');
@@ -8,7 +10,7 @@ const SVG = require('./lib/svg');
 
 const fs = require("fs")
 
-
+// Wrote a questions array used to pass through 
 const questions = [
     {
         type: "input",
@@ -33,7 +35,7 @@ const questions = [
     }
 ]
 
-
+// Main function that pulls user information and writes the output file
 function init() {
     inquirer
     .prompt(questions)
