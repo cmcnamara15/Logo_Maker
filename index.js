@@ -3,7 +3,7 @@ const Text = require('./lib/text');
 const Circle = require('./lib/circle');
 const Triangle = require('./lib/triangle.js');
 const Square = require('./lib/square.js');
-const Shape = require('./lib/shapes.js')
+const Shape = require('./lib/shapes.js');
 const SVG = require('./lib/svg');
 
 const fs = require("fs")
@@ -42,7 +42,7 @@ function init() {
             console.log("Text length must be no greater than three.");
             init();
         } else {
-        const newText = new Text(answers.text, answers.textColor);
+        const newText = new Text(answers.text, answers.textColor, answers.shape);
         // const newShape = new Shape(answers.shape, answers.color);
         var newShape;
         if(answers.shape === "Circle"){
