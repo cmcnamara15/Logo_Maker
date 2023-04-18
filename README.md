@@ -1,7 +1,9 @@
 # Logo_Maker
 
 ## Description
-This Project was built using nodejs, inquirer and jest. The goal of this project was to build a command line application that generates a SVG/logo. Using Inquirer this application prompts the user for four pieces information; text, text-color, shape, and shape-color. Once the user makes their choices a file is output in an example folder called logo.svg. 
+This Project was built using nodejs, inquirer and jest. The goal of this project was to build a command line application that generates a SVG/logo. Using Inquirer this application prompts the user for four pieces information; text, text-color, shape, and shape-color. Once the user makes their choices a file is output in an example folder called logo.svg. I broke up all the shapes into their own files, along with the code that renders the text.
+
+This project was a good exercise in understanding classes and constructors ad well as running tests. I'm looking forward to continued practice in all of these concepts. 
 
 ## Table of Contents    
 - [Description](#description)
