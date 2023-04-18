@@ -19,7 +19,7 @@ This project was a good exercise in understanding classes and constructors ad we
 
 
 ## Demo Video 
-[Demo Video](https://drive.google.com/file/d/1h8Y0TZcTQ4xUrRWxRMCbh3jmJWMP_0or/view)<br />
+[Demo Video]()<br />
 
 ## REPO URL
 [Repository URL](https://github.com/cmcnamara15/Logo_Maker)<br />
@@ -52,19 +52,18 @@ The following screenshots shows the apps functionality.<br />
 
 ## Node in terminal<br />
 
-![Screenshot of the program about to be running in the terminal](./Assets/screenshot1.png)
+![Screenshot of the program running in the terminal](./assets/screenshot1.png)
 
 ## Generated output file<br />
 
-![Example of inquirer questions running in node](./Assets/screenshot2.png)
+![Screenshot of output example](./assets/screenshot2.png)
 
-## Failed Test ret<br />
+## Failed Test result<br />
 
-![](./Assets/failedtest.png)
+![Example of failed test](./assets/failedtest.png)
 
-## Passed test<br />
+## Inquirer prompts complete<br />
 
-![Completed prompts](./Assets/passedtest.png)
-
+![Example of passed test](./assets/passedtest.png)
 
 
