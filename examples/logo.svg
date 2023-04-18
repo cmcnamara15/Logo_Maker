@@ -1,12 +1,6 @@
-<html>
-        <body>
-        
-        <h1>My first SVG</h1>
-        
+
         <svg width="300" height="200">
-            <rect x="0" y ="0" width="200" height="200" fill="Blue" />
-            <text x="35" y="115" font-size="60px" fill="Pink">CTM</text>
+            <circle cx="100" cy="100" r="100" fill="Pink"/>
+            <text x="35" y="115" font-size="60px" fill="Blue">SVG</text>
         </svg>
         
-        </body>
-        </html>

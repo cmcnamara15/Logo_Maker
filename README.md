@@ -48,31 +48,21 @@ Email: cmcnamara1991@icloud.com
 The following screenshots shows the apps functionality.<br />
 
 
-<!-- ## Node in terminal<br />
+## Node in terminal<br />
 
-![Screenshot of the program about to be run in the terminal](./Assets/first.png)
+![Screenshot of the program about to be running in the terminal](./Assets/screenshot1.png)
 
-## Inquirer prompts running in node<br />
+## Generated output file<br />
 
-![Example of inquirer questions running in node](./Assets/second.png)
+![Example of inquirer questions running in node](./Assets/screenshot2.png)
 
-## License choices<br />
+## Failed Test ret<br />
 
-![](./Assets/third.png)
+![](./Assets/failedtest.png)
 
-## Inquirer prompts complete<br />
+## Passed test<br />
 
-![Completed prompts](./Assets/fourth.png)
+![Completed prompts](./Assets/passedtest.png)
 
-## README output<br />
 
-![README Output](./Assets/README-Output.png)
 
-## README output as preview<br />
-
-![README as preview](./Assets/README-OutputPreview.png)
-
-# README Documentation
-
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
- -->
